@@ -479,4 +479,30 @@ class MysqliLib
 
         return $inputArray;
     }
+    
+    
+    /**
+     * Wrap all of values in an array for insertion into a database. This is a
+     * specific variation of the wrap_elements method that will correctly
+     * convert null values into a NULL string without quotes so that nulls get
+     * inserted into the database correctly.
+     * @param $inputArray - array we are going to create our wrapped array from
+     * @return array
+     */
+    public static function wrapValues($inputArray) : array
+    {
+        foreach ($inputArray as &$value)
+        {
+            if ($value !== null)
+            {
+                $value = "'" . $value . "'";
+            }
+            else
+            {
+                $value = "NULL";
+            }
+        }
+
+        return $inputArray;
+    }
 }
