@@ -14,10 +14,10 @@
         }
     ],
     "require": {
-        "php": ">=7.2.0"
+        "php": ">=7.2.0",
+        "ext-mysqli" : "*"
     },
     "require-dev" : {
-        "ext-mysqli" : "*",
         "programster/core-libs": "1.7.*"
     },
     "autoload": {
