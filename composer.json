@@ -1,0 +1,35 @@
+{
+    "name": "programster/mysqli-lib",
+    "type": "library",
+    "description": "Library for helping out with MySQL databases.",
+    "keywords": ["mysql","library"],
+    "homepage": "https://github.com/programster/package-mysqli-lib",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stuart Page",
+            "email": "sdpagent@gamail.com",
+            "homepage": "https://blog.programster.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "thecodingmachine/safe": "^1.0"
+    },
+    "require-dev" : {
+        "ext-mysqli" : "*",
+        "programster/core-libs": "1.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Programster\\MysqliLib\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Programster\\MysqliLib\\Testing\\": "testing/",
+            "Programster\\MysqliLib\\Testing\\Tests\\": "testing/tests/"
+        }
+    }
+}
