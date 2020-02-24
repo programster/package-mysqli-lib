@@ -14,12 +14,11 @@
         }
     ],
     "require": {
-        "php": ">=7.2.0",
-        "thecodingmachine/safe": "^1.0"
+        "php": ">=7.2.0"
     },
     "require-dev" : {
         "ext-mysqli" : "*",
-        "programster/core-libs": "1.6.*"
+        "programster/core-libs": "1.7.*"
     },
     "autoload": {
         "psr-4": {

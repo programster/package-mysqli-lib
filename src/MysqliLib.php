@@ -6,10 +6,6 @@
 
 namespace Programster\MysqliLib;
 
-use function Safe\file_get_contents;
-use function Safe\json_decode;
-use function Safe\json_encode;
-
 
 class MysqliLib
 {
@@ -461,8 +457,8 @@ class MysqliLib
 
         return $primaryKeyArray;
     }
-    
-    
+
+
     /**
      * Wrap all of elements in an array with the string (before and after)
      * e.g. wrapElements on array(foo,bar), "`" would create array(`foo`,`bar`)
@@ -479,8 +475,8 @@ class MysqliLib
 
         return $inputArray;
     }
-    
-    
+
+
     /**
      * Wrap all of values in an array for insertion into a database. This is a
      * specific variation of the wrap_elements method that will correctly
